@@ -12,7 +12,7 @@ ft_tuple = tuple(ft_tupletmp)
 
 ft_set = {"Amsterdam!", "Hello"}
 
-ft_dict.update({"Hello": "Codam!"})
+ft_dict.["Hello"] = "Codam!"
 
 print(ft_list)
 print(ft_tuple)
