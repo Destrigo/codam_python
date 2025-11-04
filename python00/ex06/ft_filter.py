@@ -1,4 +1,4 @@
-def ft_filter(function, iterable)
+def ft_filter(function, iterable):
     """
     function is what you need to find inside iterable
     """
