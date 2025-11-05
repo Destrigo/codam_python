@@ -57,4 +57,4 @@ if __name__ == "__main__":
         newlist = []
         for x in line:
             newlist.append(MORSE_CODE[x])
-        print(''.join(newlist))
+        print(' '.join(newlist))
