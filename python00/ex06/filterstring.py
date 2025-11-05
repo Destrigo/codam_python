@@ -15,7 +15,7 @@ def is_invalid(obj: str) -> bool:
         elif 48 <= ascii_val <= 57:     # Digits 0-9
             tmp += 1
         elif ascii_val == 32:           # Space
-            spaces += 1
+            tmp += 1
         else:                           # Everything else is punctuation
             return True
     return False
