@@ -1,5 +1,6 @@
 import os
 
+
 def ft_tqdm(lst: range) -> None:
     """
     Minimal tqdm-like progress generator for a range.
@@ -11,7 +12,8 @@ def ft_tqdm(lst: range) -> None:
         frac = i / total
         bar_length = 40
         filled = int(frac * bar_length)
-        bar = '[' + '=' * filled + '>' * (1 if filled < bar_length else 0) + ' ' * (bar_length - filled - (1 if filled < bar_length else 0)) + ']'
+        bar = '[' + '=' * filled + '>' * (1 if filled < bar_length else 0)
+        + ' ' * (bar_length - filled - (1 if filled < bar_length else 0)) + ']'
         percent = f"{frac * 100:6.2f}%"
 
         # attempt to fit terminal width
