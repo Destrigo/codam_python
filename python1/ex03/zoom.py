@@ -19,7 +19,7 @@ def main():
     image = cv2.imread("animal.jpeg")
     if image is None:
         raise AssertionError("Wrong image path")
-    image = image[:400, :, :]
+    image = image[:400, :400, :]
     print(f"New shape after slicing: {image.shape}")
     print(image)
     cv2.imshow("ex03", image)
