@@ -20,9 +20,10 @@ def main():
     if image is None:
         raise AssertionError("Wrong image path")
     image = image[:400, :400, :]
-    print(f"New shape after slicing: {image.shape}")
-    print(image)
-    cv2.imshow("ex03", image)
+    data = np.array(image)
+    print(f"New shape after slicing: {data.shape}")
+    print(data)
+    cv2.imshow("ex03", data)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 

@@ -13,6 +13,9 @@ def ft_load(path: str) -> np.array:
     if image is None:
         raise AssertionError("Wrong image path")
     data = np.array(image)
+    cv2.imshow("ex02", image)
     print(f"The shape of image is: {data.shape}")
     print(data)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
     return data
